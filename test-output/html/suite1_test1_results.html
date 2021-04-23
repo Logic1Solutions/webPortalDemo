@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">HoneyComb Mouse TestCases</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">common.BaseTestClass<br>ui.Amazon_NewMouse<br></th>
+	    <th id="testClassNameId" hidden="true">BaseTestClass<br>Amazon_NewMouse<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Amazon New Mouse Product Test</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">E:\eclipse-workspace\webPortal\AmazonNewMouse.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">AmazonNewMouse.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:30</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																
+											<tr>
+	<td class="time">1615869263216</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('8d3daf3f-bf17-4415-8180-4fd3b5871341','block');changeSingleIcon('span-8d3daf3f-bf17-4415-8180-4fd3b5871341');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.Amazon_NewMouse</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-8d3daf3f-bf17-4415-8180-4fd3b5871341' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1615869263216</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>searchMouse</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+						<span class="duration"><b>Duration: </b>8.305s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="8d3daf3f-bf17-4415-8180-4fd3b5871341" style="display: block;">
+												Test Case: searchMouse - Failed
+												<br>  <img src='E:\eclipse-workspace\webPortal\screenshot\screenshot\searchMouse_2021-03-15.png' height='100' width='100' /><br>
+												<a href=E:\eclipse-workspace\webPortal\screenshot\screenshot\searchMouse_2021-03-15.png></a>
+									<a href="javascript:toggleElement('exception-8d3daf3f-bf17-4415-8180-4fd3b5871341','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: The following asserts failed:<br/>
+	expected [1Jelly Comb 2.4G Slim Wireless Mouse with Nano Receiver MS001 (Black and Gold)] but found [Jelly Comb 2.4G Slim Wireless Mouse with Nano Receiver MS001 (Black and Gold)]</b></a><br/>
+		<div class="stackTrace" id="exception-8d3daf3f-bf17-4415-8180-4fd3b5871341">
+					org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)<br/>
+					org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)<br/>
+					ui.Amazon_NewMouse.searchMouse(Amazon_NewMouse.java:55)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)<br/>
+					org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)<br/>
+					org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
+					org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1510)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:764)<br/>
+					org.testng.TestRunner.run(TestRunner.java:585)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:286)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1069)<br/>
+					org.testng.TestNG.run(TestNG.java:1037)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1615869260978</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('43a6cbd4-96d7-4803-b136-7416b03457de','block');changeSingleIcon('span-43a6cbd4-96d7-4803-b136-7416b03457de');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.Amazon_NewMouse</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-43a6cbd4-96d7-4803-b136-7416b03457de' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1615869260978</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>verifyPageTitle</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.142s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="43a6cbd4-96d7-4803-b136-7416b03457de" style="display: block;">
+												Test Case: verifyPageTitle - Passed
+								</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
