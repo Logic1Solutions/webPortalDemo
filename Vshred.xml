@@ -7,7 +7,7 @@
 </listeners>
 
   <test name="Vshred Menu">
-  <parameter name="browser" value="chrome"></parameter>
+   <!--  parameter name="browser" value="chrome"></parameter> -->
     <classes>
       <class name="common.BaseTestClass"/>
       <class name="ui.Vshred"/>

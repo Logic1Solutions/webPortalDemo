@@ -1,14 +1,14 @@
 package common;
 
 import java.io.IOException;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
 import utilities.TestUtils;
 
-public class Listeners implements ITestListener{
+public class Listeners extends BaseTestClass implements ITestListener{
 	
 
 	TestUtils screencapture = new TestUtils();
@@ -20,11 +20,19 @@ public class Listeners implements ITestListener{
 	}
 
 	public void onTestSuccess(ITestResult result) {
+	
 		Reporter.log("Test Case: " + result.getName() + " - Passed");		
+//		 public static void markTestStatus(String status, String reason, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Test Case Passed\"}}");
+			  }
 		
-	}
+	
 	public void onTestFailure(ITestResult result) {
 		Reporter.log("Test Case: "+ result.getName() + " - Failed");
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Test Case Failed\"}}");
+		
 		System.out.println("Test Case: "+ result.getName() + result.getStatus());
 		try {
 			screencapture.getScreenshot(result.getName());
